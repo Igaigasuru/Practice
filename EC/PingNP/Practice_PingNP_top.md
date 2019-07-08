@@ -29,3 +29,12 @@ Go to [Practice1 page](https://github.com/Igaigasuru/Practice/blob/master/EC/Pin
 
 ### Practice 2
 Go to [Practice2 page](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice2.md).
+
+### Practice 3
+Go to [Practice3 page](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice3.md).
+
+### Practice 4
+Go to [Practice4 page](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice4.md).
+
+### Practice 5
+Go to [Practice5 page](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice5.md).
