@@ -8,9 +8,9 @@ Let's check the behaviour in the case of "All HeartBeats do not work when cluste
                     |
 +-------+           |           +-------+
 |       |-----------+-----------|       |
-|  SV1  |     Interconnects1    |  SV2  |
+|  SV1  |     Interconnect1     |  SV2  |
 |       |-----------------------|       |
-+-------+     Interconnects2    +-------+
++-------+     Interconnect2     +-------+
 ```
 
 ## Practice
@@ -24,10 +24,10 @@ Let's check the behaviour in the case of "All HeartBeats do not work when cluste
 	                    |
 	+-------+           |           +-------+
 	|       |-----------+---- * ----|       |
-	|  SV1  |    Interconnects 1    |  SV2  |
+	|  SV1  |     Interconnect1     |  SV2  |
 	|       |                       |       |
 	|       |---------- * ----------|       |
-	+-------+    Interconnects 2    +-------+
+	+-------+     Interconnect2     +-------+
 	```  
 	You can reproduce this situation by the below.
 	- Physical servers: Disconnect both Interconnect LANs from SV2.
@@ -39,6 +39,7 @@ Let's check the behaviour in the case of "All HeartBeats do not work when cluste
 	\* WebManager or clpstat command will take some time to show cluster status because of timeout to get other server's status.
 
 ## Advanced Practice
+### Advanced Practice1
 Check the behaviour from log, "C:\Program Files\EXPRESSCLUSTER\log\userlog.log".
 - SV1 userlog.log  
   ```bat
@@ -64,3 +65,5 @@ Check the behaviour from log, "C:\Program Files\EXPRESSCLUSTER\log\userlog.log".
 	   :
 	* INFO  [pm   ] Cluster service is shutting down.
 	```
+### Advanced Practice2
+Reconnect both Interconnects, make all cluster status GREEN, remove PingNP Target resource from the cluster and do the same practice and compare the behavior.
