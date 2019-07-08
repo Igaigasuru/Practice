@@ -8,10 +8,10 @@ Let's check the behaviour in the case of "All HeartBeats get down when cluster i
                     |
 +-------+           |           +-------+
 |       |-----------+-----------|       |
-|  SV1  |    Interconnects 1    |  SV2  |
+|  SV1  |     Interconnect1     |  SV2  |
 |       |                       |       |
 |       |-----------------------|       |
-+-------+    Interconnects 2    +-------+
++-------+     Interconnect2     +-------+
 ```
 ## Practice
 1. Start failovergroup on SV1.
@@ -21,14 +21,14 @@ Let's check the behaviour in the case of "All HeartBeats get down when cluster i
 	                    |
 	+-------+           |           +-------+
 	|       |-----------+-----------|       |
-	|  SV1  |    Interconnect 1     |  SV2  |
+	|  SV1  |    I nterconnect1     |  SV2  |
 	| (Act) |                       | (Std) |
 	|       |---------- * ----------|       |
-	+-------+    Interconnect 2     +-------+
+	+-------+     Interconnect2     +-------+
 	```  
 	You can reproduce this situation by the below.
-	- Physical servers: Disconnect Network Switch among SV1, SV2 and PingNP target.
-	- Virtual machines: Disable Interconnect1 NIC on both PingNP target and SV2.  
+	- Physical servers: Disconnect Interconnect2 LAN from SV2.
+	- Virtual machines: Disable Interconnect2 NIC on SV2.  
 1. Wait HeartBeat timeout (default: 30sec) or more.
 1. Logon SV1 and check cluster status by yourself.
 1. Logon SV2 and check cluster status by yourself.
