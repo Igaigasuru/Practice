@@ -24,7 +24,7 @@ Assuming one Ping NP resource:
 	- If Ping NP target is NOT reachable, cluster service executes Action at NP Occurrence (default: Emergency shutdown).
 
 ## Practices
-### Practice 1:
+### Practice 1
 Let's check the behaviour in the case of "All HeartBeats do not work when cluster service is started".
 
 **Configuration**
