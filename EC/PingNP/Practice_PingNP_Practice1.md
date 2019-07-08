@@ -8,27 +8,30 @@ Let's check the behaviour in the case of "All HeartBeats do not work when cluste
                     |
 +-------+           |           +-------+
 |       |-----------+-----------|       |
-|  SV1  |                       |  SV2  |
+|  SV1  |     Interconnects1    |  SV2  |
 |       |-----------------------|       |
-+-------+     Interconnects     +-------+
++-------+     Interconnects2    +-------+
 ```
 
 ## Practice
 1. Shutdown both SV1 and SV2 by shutting down cluster.
 	- WebManager: Right click cluster name and select "shutdown".
 	- Command: Execute "clpstdn".
-1. Disconnect Interconnects.
-	- Phsycal servers: Disconnect both Interconnects LAN from SV2.
+1. Disconnect Interconnects1 between Ping NP Target and SV2 and Interconnects2 between SV1 and SV2.  
+	(All HeartBeats are disconnected and only SV1 is reachable to Ping NP target.)
+	```bat
+	            [Ping NP Target]
+	                    |
+	+-------+           |           +-------+
+	|       |-----------+---- * ----|       |
+	|  SV1  |    Interconnects 1    |  SV2  |
+	|       |                       |       |
+	|       |---------- * ----------|       |
+	+-------+    Interconnects 2    +-------+
+	```  
+	You can reproduce this situation by the below.
+	- Physical servers: Disconnect both Interconnect LANs from SV2.
 	- Virtual machines: Disable both NICs on SV2.  
-    ```bat
-                [Ping NP Target]
-                        |
-    +-------+           |           +-------+
-    |       |-----------+---------  *       |
-    |  SV1  |                       |  SV2  |
-    |       |---------------------  *       |
-    +-------+                       +-------+
-    ```
 1. Boot both SV1 and SV2.
 1. Wait 5 minutes (default Server Sync Wait Time) or more.  
 1. Logon SV1 and check cluster status on SV1 (\*).
