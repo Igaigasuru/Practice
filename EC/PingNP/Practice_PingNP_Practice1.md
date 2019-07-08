@@ -1,4 +1,5 @@
 # Practice 1
+We assume that you came this Practice from [TOP](https://github.com/Igaigasuru/Practice/edit/master/EC/PingNP/Practice_PingNP_top.md).  
 Let's check the behaviour in the case of "All HeartBeats do not work when cluster service is started".
 
 ## Configuration
