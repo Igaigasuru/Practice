@@ -60,7 +60,7 @@ Let's check the behaviour in the case of "All HeartBeats do not work when cluste
 1. Logon SV2 nd check cluster status on SV2 (\*).  
 	\* WebManager or clpstat command will take some time to show cluster status because of timeout to get other server's status.
 
-**Advanced Practice**
+**Advanced Practice**  
 Check the behaviour from log, "C:\Program Files\EXPRESSCLUSTER\log\userlog.log".
 - SV1 userlog.log  
   ```bat
