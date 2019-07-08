@@ -26,3 +26,6 @@ Assuming one Ping NP resource:
 ## Practices
 ### Practice 1
 Go to [Practice1 page](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice1.md).
+
+### Practice 2
+Go to [Practice2 page](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice2.md).
