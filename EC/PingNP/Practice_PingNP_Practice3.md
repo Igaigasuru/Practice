@@ -1,6 +1,11 @@
 # Practice 3
-We assume that you came this Practice from [TOP](https://github.com/Igaigasuru/Practice/edit/master/EC/PingNP/Practice_PingNP_top.md).  
 Let's check the behaviour in the case of "All HeartBeats get down when cluster is already running".
+
+## Assumption
+You have already check the below:
+- [Ping NP Resolution Resource Practice](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_top.md)
+- [Practice 1 for Ping NP Resolution Resource](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice1.md)
+- [Practice 2 for Ping NP Resolution Resource](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice1.md)
 
 ## Configuration
 ```bat
