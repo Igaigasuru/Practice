@@ -61,8 +61,8 @@ Let's check the behaviour in the case of "All HeartBeats do not work when cluste
 	\* WebManager or clpstat command will take some time to show cluster status because of timeout to get other server's status.
 
 **Advanced Practice**
-1. Check the behaviour from log, "C:\Program Files\EXPRESSCLUSTER\log\userlog.log".
-  - SV1 userlog.log  
+Check the behaviour from log, "C:\Program Files\EXPRESSCLUSTER\log\userlog.log".
+- SV1 userlog.log  
   ```bat
     INFO  [pm   ] Cluster service has been started properly.
     INFO  [rc   ] Server SV1 started to return to the cluster.
@@ -74,15 +74,15 @@ Let's check the behaviour in the case of "All HeartBeats do not work when cluste
   * INFO  [rc   ] The group failover is starting.
      :
   ```
-  - SV2 userlog.log  
-  ```bat
-  INFO  [pm   ] Cluster service has been started properly.
-  INFO  [rc   ] Server SV2 started to return to the cluster.
-  INFO  [rc   ] Server SV2 is returned to the cluster.
-  INFO  [nm   ] The resource lankhb1 of the server SV2 has been started.
-  INFO  [nm   ] The resource lankhb2 of the server SV2 has been started.
-   : (After 5 minutes)
-* INFO  [pm   ] There was a request to stop cluster service from the internal.
-   :
-* INFO  [pm   ] Cluster service is shutting down.
-  ```
+- SV2 userlog.log  
+	```bat
+	  INFO  [pm   ] Cluster service has been started properly.
+	  INFO  [rc   ] Server SV2 started to return to the cluster.
+	  INFO  [rc   ] Server SV2 is returned to the cluster.
+	  INFO  [nm   ] The resource lankhb1 of the server SV2 has been started.
+	  INFO  [nm   ] The resource lankhb2 of the server SV2 has been started.
+	   : (After 5 minutes)
+	* INFO  [pm   ] There was a request to stop cluster service from the internal.
+	   :
+	* INFO  [pm   ] Cluster service is shutting down.
+	```
