@@ -24,6 +24,7 @@ Assuming one Ping NP resource:
 	- If Ping NP target is NOT reachable, cluster service executes Action at NP Occurrence (default: Emergency shutdown).
 
 ## Practices
+
 ### Practice 1
 Go to [Practice1 page](https://github.com/Igaigasuru/Practice/blob/master/EC/PingNP/Practice_PingNP_Practice1.md).
 
